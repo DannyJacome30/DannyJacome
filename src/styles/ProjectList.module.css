@@ -1,0 +1,95 @@
+.project_list_container{
+    background-color: white;
+    padding: 32px;
+}
+
+.project_list_title{
+    color: #0F044C;
+    text-align: center;
+    padding-bottom: 32px;
+    font-weight: bold;
+}
+
+.project_list_menu_cont{
+    margin: 0px 64px;
+}
+
+.project_list_menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    padding: 12px;
+    border: rgb(241, 241, 241) solid 1px;
+    border-radius: 16px;
+}
+
+.project_list_menu_item{
+    color: black;
+}
+
+.project_list_cards_cont{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-content: space-evenly;
+    justify-items: center
+}
+
+.project_list_card{
+    color: #0F044C;
+    background-color: rgb(248, 248, 248);
+    margin: 32px;
+    padding: 24px;
+    text-align: center;
+    padding-bottom: 32px;
+    border-radius: 16px;
+    height: 280px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 16px 0px rgba(135,135,135,0.8);
+    -webkit-box-shadow: 4px 4px 16px 0px rgba(135,135,135,0.8);
+    -moz-box-shadow: 4px 4px 16px 0px rgba(135,135,135,0.8);
+}
+
+.card_figure{
+    width: 100%;
+    transition: all .3s ease;
+}
+
+.card_description{
+    box-sizing: border-box;
+    width: 907px;
+    height: 555px;
+    border: 1px solid #0F044C;
+    border-radius: 15px;
+    
+    text-align: center;
+    position: relative;
+  /*  left: 50%;
+    top:-70%;
+    bottom: 0;*/
+    padding: 12px 16px;
+    min-width: 230px;
+    /*transform: translate3d(0, 0, 0);*/
+    background: #ffffff;
+    pointer-events: none;
+    transition: all .3s ease;
+   /* display: none;*/
+}   
+
+.project_list_menu_item:active{
+    color: blue;
+}
+
+.project_list_menu_item:hover{
+    color: rgb(47, 47, 165);
+}
+
+
+.style.project_list_card:hover .card_description{
+    background-color: #ffffff;
+    display:block;
+}
