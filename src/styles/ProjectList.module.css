@@ -80,6 +80,11 @@
    /* display: none;*/
 }   
 
+.icon_project{
+    background-color: #0F044C;
+    border-radius: 50%;
+}
+
 .project_list_menu_item:active{
     color: blue;
 }
@@ -89,7 +94,7 @@
 }
 
 
-.style.project_list_card:hover .card_description{
+.project_list_card:hover .card_description{
     background-color: #ffffff;
     display:block;
 }

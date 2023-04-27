@@ -1,9 +1,10 @@
 import React from 'react';
 import style from '@/styles/ProjectList.module.css'
-import { Inter } from 'next/font/google'
+import { Inter, Linden_Hill } from 'next/font/google'
 import Image from 'next/image';
-import project from '../../../public/project.jpg';
-import close from '../../../public/close.png';
+
+import Link from 'next/link';
+import ProjectItem from '../ProjectItem/ProjectItem';
 const inter = Inter({ subsets: ['latin'] })
   
 function ProjectList() {
@@ -30,17 +31,7 @@ function ProjectList() {
             </div>
             <div className={style.project_list_cards_cont}>
                 <article className={style.project_list_card}>
-                    <div>
-                        <h4>Project 1</h4>
-                        <Image alt="proyecto" className={style.card_figure} src={project} width={300} height={200}/>
-                    </div>
-                    <span className={style.card_description}>
-                        <div className={style.card_description_container_title}>
-                        <Image alt="cerrar" className={style.card_figure_close} src={close} width={100} height={100}/>
-                            <h2 className={style.card_description_container_title_tit}>Mobile Finance</h2>
-                        </div>
-                        <p className={style.card_description_descrip}>We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
-                    </span>
+                   <ProjectItem/>
                 </article>
                 <div className={style.project_list_card}>
                     Project 2
