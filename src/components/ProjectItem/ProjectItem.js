@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '@/styles/ProjectList.module.css'
+import style from '@/styles/ProjectItem.module.css'
 
 import project from '../../../public/project.jpg';
 

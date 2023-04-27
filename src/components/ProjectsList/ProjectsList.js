@@ -1,10 +1,11 @@
 import React from 'react';
-import style from '@/styles/ProjectList.module.css'
-import { Inter, Linden_Hill } from 'next/font/google'
-import Image from 'next/image';
 
-import Link from 'next/link';
+import style from '@/styles/ProjectList.module.css'
+
+import { Inter} from 'next/font/google'
+
 import ProjectItem from '../ProjectItem/ProjectItem';
+
 const inter = Inter({ subsets: ['latin'] })
   
 function ProjectList() {
