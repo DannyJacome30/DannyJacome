@@ -7,18 +7,20 @@ import Presentation from '@/components/Presentation/Presentation'
 import Contact from '@/components/Contact/Contact'
 import ProjectList from '@/components/ProjectsList/ProjectsList'
 import About from '@/components/About/About'
+import Layout from '@/components/Layout/Layout '
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <>
-      <Navbar className={inter.className}/>
-      <Presentation/>
-      <About/>
-      <ProjectList/>
+    <Layout>
+        <Presentation/>
+        <About/>
+        <ProjectList/>
+        <Contact/>
+    </Layout>
       
-      <Contact/>
     </>
   )
 }

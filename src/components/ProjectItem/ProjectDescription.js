@@ -11,10 +11,13 @@ import project from '../../../public/project.jpg';
 import ProjectLinks from './ProjectLinks';
 import ProjectTech from './ProjectTech';
 
-function ProjectDescription() {
+function ProjectDescription({onClose}) {
     return ( 
         <span className={style.card_description}>
-            <Image alt="cerrar" className={style.card_description_close} src={close} width={32} height={32}/>
+            <button onClick={onClose}>
+                <Image alt="cerrar" className={style.card_description_close} src={close} width={32} height={32}/>
+            </button>
+           
             <h2 className={style.card_description_title}>Mobile Finance</h2>
             <div className={style.card_description_cont}>
                 <Image alt="project" className={style.card_description_proj} src={project} width={240} height={180}/>
