@@ -14,11 +14,11 @@ function Contact() {
             <h2 className={style.contact_tittle}>Contact me</h2>
             <div className={style.contact_list}>
             <Link className={style.contact_item} href='https://www.linkedin.com/in/daniela-jacome30/'>
-                <Image src={linkedin} height={30} width={30}/>
+                <Image alt='Linkedin' src={linkedin} height={30} width={30}/>
                 Linkedin
             </Link>
             <Link className={style.contact_item} href='https://github.com/DannyJacome30'>
-                <Image src={github} height={30} width={30}/>
+                <Image alt='Github' src={github} height={30} width={30}/>
                 Github
             </Link>
         </div>

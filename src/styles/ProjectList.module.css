@@ -24,6 +24,8 @@
     padding: 12px;
     border: rgb(241, 241, 241) solid 1px;
     border-radius: 16px;
+    text-decoration: none;
+    list-style: none;
 }
 
 .project_list_menu_item{

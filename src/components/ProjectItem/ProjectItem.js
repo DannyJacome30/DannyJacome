@@ -7,20 +7,24 @@ import project from '../../../public/project.jpg';
 
 import Image from 'next/image';
 
-import ProjectDescription from './ProjectDescription';
+import ModalDescription from './ModalDescription';
 
+import { Inter} from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
 
 function ProjectItem() {
+
     const [modalProject, setModalProject] = useState(false);
     return ( 
         <>
-             <section onClick={()=>setModalProject(true)}>
+             <section onClick={()=>setModalProject(true)} className={style.card_container}>
                 <h4>Project 1</h4>
                 <Image alt="proyecto" className={style.card_figure} src={project} width={300} height={200}/>
             </section>
             {modalProject && createPortal(
-                <ProjectDescription onClose={()=>setModalProject(false)}/>,
-                document.body    
+                <ModalDescription onClose={()=>setModalProject(false)} show={modalProject}/>,
+                document.body
             )}
             
         </>

@@ -30,8 +30,8 @@ function ProjectList() {
                     </li>
                 </ul>
             </div>
-            <div className={style.project_list_cards_cont}>
-                <article className={style.project_list_card}>
+            <div className={style.project_list_cards_cont} >
+                <article className={style.project_list_card} id='projects-container'>
                    <ProjectItem/>
                 </article>
                 <div className={style.project_list_card}>
