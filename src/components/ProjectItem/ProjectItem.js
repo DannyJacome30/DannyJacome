@@ -14,7 +14,6 @@ import { Inter} from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 function ProjectItem() {
-
     const [modalProject, setModalProject] = useState(false);
     return ( 
         <>
@@ -25,8 +24,7 @@ function ProjectItem() {
             {modalProject && createPortal(
                 <ModalDescription onClose={()=>setModalProject(false)} show={modalProject}/>,
                 document.body
-            )}
-            
+            )}    
         </>
      );
 }

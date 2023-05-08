@@ -28,9 +28,8 @@ function ProjectDescription({onClose, show}) {
       };
     return ( 
         <section className={`${style.card_description} ${inter.className}`} >
-            <a  onClick={2} href='#'>
+            <a  onClick={handleCloseClick}>
                 <Image alt="cerrar" className={style.card_description_close} src={close} width={32} height={32}/>
-            
             </a>
             
             <h2 className={style.card_description_title}> Mobile Finance</h2>

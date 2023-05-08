@@ -13,9 +13,9 @@ function Navbar() {
                 <Image className={style.navbar_img_logo} alt="logo" src={logoDark} width={70}
                     height={52}/>
                     
-                <a className={style.navbar_item} href="/about_me">About me</a> 
-                <a className={style.navbar_item} href="/projects">Projects</a>
-                <a className={style.navbar_item} href="/contact_me">Contact me</a>
+                <a className={style.navbar_item} href="#about_me">About me</a> 
+                <a className={style.navbar_item} href="#projects">Projects</a>
+                <a className={style.navbar_item} href="#contact_me">Contact me</a>
             </nav>
         </header>
      );

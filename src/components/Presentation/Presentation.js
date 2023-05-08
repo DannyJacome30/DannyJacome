@@ -11,6 +11,11 @@ import down from '../../../public/arrow.svg';
 
 const inter = Inter({ subsets: ['latin'] })
 
+function goto(e){
+    window.location.href="#about_me";
+    e.preventDefault();
+    e.stopPropagation();
+}
 function Presentation(){
     return (
         <section className={`${inter.className}`}>
@@ -23,7 +28,7 @@ function Presentation(){
                         height={650}/>
             </div>
             <div className={style.home_img_arrow_cont}>
-                <Image alt='next' className={style.home_img_arrow} src={down} width={40} height={40}/>
+                <Image alt='next' onClick={goto} className={style.home_img_arrow} src={down} width={40} height={40}/>
             </div>
         </section>            
     );

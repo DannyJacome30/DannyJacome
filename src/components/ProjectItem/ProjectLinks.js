@@ -14,7 +14,7 @@ function ProjectLinks() {
         <div>
             <ul className={style.links_list}>
                 <li>
-                    <Link href='/'>
+                    <Link href='https://github.com/DannyJacome30'>
                         <Image alt="github" src={github} className={style.link_icon_project} width={40} height={40}/> 
                     </Link>
                 </li>

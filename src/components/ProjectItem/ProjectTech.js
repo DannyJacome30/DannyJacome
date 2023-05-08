@@ -9,39 +9,26 @@ import Link from 'next/link';
 
 function ProjectTech() {
 
-    const [modalTech, setModalTech] = useState(false); 
+    const [modalTech, setModalTech] = useState(false);
+
     return ( 
-        <div>
-            <ul className={style.tech_list}>
-                <li>
-                    <Link href='/'>
-                        <button className={style.tech_list_btn} onClick={()=>setModalTech(true)}>
+        <div className={style.tech_list}>
+            <button id='Languajes' className={style.tech_list_btn} onMouseEnter={()=>setModalTech(true)} onMouseLeave={()=>setModalTech(false)}>
                             Languages
-                        </button>
-                        {modalTech && createPortal(
-                            <ModalTech onTouchMove={()=>setModalTech(false)} show={modalTech} nameList={'Languages'}/>,
-                            document.getElementById('description')
-                        )}
-                    </Link>
-                </li>
-                <li>
-                    <Link href='/'>
-                        <button className={style.tech_list_btn}>
-                            Frameworks
-                        </button>
-                    </Link>
-                </li>
-                <li>
-                    <Link href='/'>
-                        <button className={style.tech_list_btn}> 
-                            Technologies
-                        </button>
-                    </Link>
-                </li>     
-            </ul>
-            <span>
+            </button>
                 
-            </span>
+            <button id='Frameworks' className={style.tech_list_btn} onMouseEnter={()=>setModalTech(true)} onMouseLeave={()=>setModalTech(false)}>
+                            Frameworks
+            </button>
+                
+            <button id='Technologies' className={style.tech_list_btn} onMouseEnter={()=>setModalTech(true)} onMouseLeave={()=>setModalTech(false)}>
+                            Technologies
+            </button>
+               
+            {modalTech && createPortal(
+                <ModalTech nameList={'Languages'} onShow={modalTech}/>,
+                document.getElementById('description')
+            )}   
         </div>
      );
 }

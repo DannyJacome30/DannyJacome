@@ -22,6 +22,7 @@
     width: 120px;
     margin: 8px;
     border: none;
+    transition-duration: 500ms;
 }
 
 .about_btn:hover{

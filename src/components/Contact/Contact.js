@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 function Contact() {
     return ( 
-        <div className={`${style.contact_container} ${inter.className}`}>
+        <section id='contact_me' className={`${style.contact_container} ${inter.className}`}>
             <h2 className={style.contact_tittle}>Contact me</h2>
             <div className={style.contact_list}>
             <Link className={style.contact_item} href='https://www.linkedin.com/in/daniela-jacome30/'>
@@ -22,7 +22,7 @@ function Contact() {
                 Github
             </Link>
         </div>
-        </div>
+        </section>
         
      );
 }

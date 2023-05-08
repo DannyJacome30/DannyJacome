@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
   
 function ProjectList() {
     return ( 
-        <section className={`${style.project_list_container} ${inter.className}`}>
+        <section id='projects' className={`${style.project_list_container} ${inter.className}`}>
             <h2 className={style.project_list_title}>
                 Projects
             </h2>
