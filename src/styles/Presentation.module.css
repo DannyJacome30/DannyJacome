@@ -1,0 +1,54 @@
+.home_container{
+    width: 100%;
+    height: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+}
+
+.home_img_logo{
+    width: 450px;
+    height: 600px;
+}
+
+.home_text_welcome{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #141E61;
+}
+
+.home_text_pres{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #141E61;
+}
+
+.home_img_arrow_cont{
+    background-color: white;
+    display: grid;
+    height: 20px;
+}
+
+.home_img_arrow{
+    justify-self: center;
+    cursor: pointer;
+    animation: jumpInfinite 1.5s infinite;
+}
+
+
+@keyframes jumpInfinite {
+    0% {
+        margin-top: -10px;
+    }
+    50%{
+        margin-top: -20px;
+    }
+    100%{
+        margin-top: -10px;
+    }
+}

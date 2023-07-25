@@ -1,0 +1,31 @@
+.contact_container{
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    padding:32px;
+}
+
+.contact_tittle{
+    color: #0F044C;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.contact_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact_item{
+    color: #ffffff;
+    background: #0F044C;
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 140px;
+}

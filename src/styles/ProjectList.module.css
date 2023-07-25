@@ -1,0 +1,80 @@
+.project_list_container{
+    background-color: white;
+    padding: 32px;
+}
+
+.project_list_title{
+    color: #0F044C;
+    text-align: center;
+    padding-bottom: 32px;
+    font-weight: bold;
+}
+
+.project_list_menu_cont{
+    margin: 0px 64px;
+}
+
+.project_list_menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    padding: 12px;
+    border: rgb(241, 241, 241) solid 1px;
+    border-radius: 16px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.project_list_menu_item{
+    color: black;
+}
+
+.project_list_cards_cont{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-content: space-evenly;
+    justify-items: center
+}
+
+.project_list_card{
+    color: #0F044C;
+    background-color: rgb(248, 248, 248);
+    margin: 32px;
+    padding: 24px;
+    text-align: center;
+    padding-bottom: 32px;
+    border-radius: 16px;
+    height: 280px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 16px 0px rgba(135,135,135,0.8);
+    -webkit-box-shadow: 4px 4px 16px 0px rgba(135,135,135,0.8);
+    -moz-box-shadow: 4px 4px 16px 0px rgba(135,135,135,0.8);
+}
+
+.project_list_menu_item:active{
+    color: blue;
+}
+
+.project_list_menu_item:hover{
+    color: rgb(47, 47, 165);
+}
+
+.project_list_card:hover .card_description{
+    background-color: #ffffff;
+    display:block;
+}
+
+
+
+
+
+
+
+
+
+
