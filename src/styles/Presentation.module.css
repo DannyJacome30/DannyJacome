@@ -52,3 +52,39 @@
         margin-top: -10px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .home_img_logo{
+        width: 50%;
+        height: 60%;
+    }
+    
+}
+
+@media screen and (min-width:500px) and (max-width: 781px) {
+	.home_text_welcome {
+		font-size: 28px;
+	}
+
+    .home_text_pres{
+        font-size: 32px;
+    }
+
+    .home_description{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+	.home_text_welcome {
+		font-size: 24px;
+        display: flex;
+        align-self: center;
+    }    
+    .home_text_pres{
+        font-size: 28px;
+        display: flex;
+        align-self: center;
+    }
+}
+
