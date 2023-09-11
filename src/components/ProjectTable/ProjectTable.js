@@ -4,30 +4,31 @@ import ProjectItem from '../ProjectItem/ProjectItem';
 import { Inter} from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
-let filteredProject;
+
 
 function ProjectTable({projectList}) {
 
-    const [projectFilter, setProjectFilter] = useState(false);
-    let project;
-    var handleMouseClick = (categoria) => {
-        filteredProject = projectList.filter((project) =>
+    const [filteredProjects, setFilteredProjects] = useState(projectList);
+
+    const handleMouseClick = (categoria) => {
+        if (categoria === 'All') {
+          setFilteredProjects(projectList);
+        } else {
+          const filteredProject = projectList.filter((project) =>
             project.tags.includes(categoria)
-        );
-        setProjectFilter(true);
+          );
+          setFilteredProjects(filteredProject);
+        }
+      };
+
+    const mapProject = () => {
+        return filteredProjects.map(
+        (element)=>(
+            <ProjectItem key={element.id} element={element} />
+            ));
     };
 
-    const mapProject = (filteredProject) => filteredProject?.map(
-        (element)=>(
-           // console.log(Object.entries(element))
-            <ProjectItem element={element}/>
-            )
-    );
     
-    if(!projectFilter){
-        filteredProject =projectList
-    }
-    console.log(filteredProject)
     return ( 
         <section id='projects' className={`${style.project_list_container} ${inter.className}`}>
             <h2 className={style.project_list_title}>
@@ -35,10 +36,10 @@ function ProjectTable({projectList}) {
             </h2>
             <div className={style.project_list_menu_cont}>
                 <div className={style.project_list_menu}>
-                    <button id='all' className={style.project_list_menu_item} onClick={() => setProjectFilter(false)} >
+                    <button id='all' className={style.project_list_menu_item} onClick={() => handleMouseClick('All')} >
                         All
                     </button>
-                    <button id='all' className={style.project_list_menu_item}>
+                    <button id='all' className={style.project_list_menu_item} onClick={() => handleMouseClick('App Mobile')}>
                         Mobile Apps
                     </button>   
                     <button id='all' className={style.project_list_menu_item} onClick={() => handleMouseClick("App Desktop")}>
@@ -51,7 +52,7 @@ function ProjectTable({projectList}) {
             </div>
             
             <div className={style.project_list_cards_cont} id='ProjectList' >
-                {mapProject(filteredProject)}
+                {mapProject()}
                 
             </div>
             
