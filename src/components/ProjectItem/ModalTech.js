@@ -10,19 +10,40 @@ const inter = Inter({ subsets: ['latin'] })
 
 /*TEMPORAL */
 import icon from '../../../public/icons/java.svg';
+//<Image alt={selectedButtonId} className={style.tech_item} src={icon} width={52} height={52}/>
 
-function ProjectDescription({nameList}) {
-    
-    if(nameList==='Languages'){
-        console.log(nameList);
-        return ( 
+
+const mapTech = (list) => list.map(
+    (element)=>(
+        <li> <p> {element} </p> </li>
+        )
+    )
+
+function ProjectDescription({selectedButtonId,element}) {
+    if(selectedButtonId=="Languajes"){
+        return(
             <div className={`${style.tech_container} ${inter.className}`} >
-                <Image alt={nameList} className={style.tech_item} src={icon} width={52} height={52}/>
-                <Image alt={nameList} className={style.tech_item} src={icon} width={52} height={52}/>
+                <ul id={"list_tech_ul"}>
+                {mapTech(element.lang)}
+                </ul>
             </div>
-         );
-    }else{
-        return null;
+        )
+    }else if(selectedButtonId=="Frameworks") {
+        return(
+            <div className={`${style.tech_container} ${inter.className}`} >
+                <ul id={"list_tech_ul"}>
+                {mapTech(element.fram)}
+                </ul>
+            </div>
+        )
+    }else if(selectedButtonId=="Tech") {
+        return(
+            <div className={`${style.tech_container} ${inter.className}`} >
+                <ul id={"list_tech_ul"}>
+                {mapTech(element.tech)}
+                </ul>
+            </div>
+        )
     }
     
 

@@ -9,25 +9,55 @@ import page from '../../../public/page.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 
-function ProjectLinks() {
+const gitL = (gi) => {
+    if(gi!=""){
+       // console.log("GIT")
+        return(
+            <li>
+                <Link href={gi}>
+                    <Image alt="github" src={github} className={style.link_icon_project} width={40} height={40}/> 
+                </Link>
+            </li> 
+        );
+    }
+}
+
+const pageL = (pg) => {
+    if(pg!=""){
+        console.log("PG")
+        return(
+            <li>
+                <Link href={pg}>
+                    <Image alt="page" src={page} width={47} height={47}/>
+                </Link>
+            </li>
+        );
+    }
+}
+
+const videoL = (vd) => {
+    if(vd!=""){
+        console.log("VD")
+        return(
+            <li>
+            <Link href={vd}>
+                <Image alt="video" src={video} width={47} height={47}/>
+            </Link>
+        </li>
+        );
+    }
+}
+
+function ProjectLinks({element}) {
+
+    
     return ( 
         <div>
             <ul className={style.links_list}>
-                <li>
-                    <Link href='https://github.com/DannyJacome30'>
-                        <Image alt="github" src={github} className={style.link_icon_project} width={40} height={40}/> 
-                    </Link>
-                </li>
-                <li>
-                    <Link href='/'>
-                        <Image alt="page" src={page} width={47} height={47}/>
-                    </Link>
-                </li>
-                <li>
-                    <Link href='/'>
-                        <Image alt="video" src={video} width={47} height={47}/>
-                    </Link>
-                </li>
+                {gitL(element.github)}
+                {pageL(element.page)}
+                {videoL(element.video)}
+               
                                    
             </ul>
         </div>

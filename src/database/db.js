@@ -1,20 +1,26 @@
 import allData from './data'
 
 class Database{
-    constructor(){}
+    constructor(){
+      this.dat=Object.values(allData);
+    }
 
-    getAll(){
+   /* getAll(){
         return new Promise(async (resolve, reject) => {
             try {
               const asArray = Object.values(allData)
-              console.log('allDATA:', asArray)
-              await randomDelay()
+              //console.log('allDATA:', asArray)
+              //await randomDelay()
               resolve(asArray)
             } catch (error) {
               reject(error)
             }
         })
-    }
+    }*/
+
+    getAll(){
+      return this.dat;
+  }
 
     getById(id){
         return new Promise(async (resolve, reject) => {

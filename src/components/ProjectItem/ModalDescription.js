@@ -15,7 +15,7 @@ import { Inter} from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-function ProjectDescription({onClose, show}) {
+function ProjectDescription({element, onClose, show}) {
 
     
 
@@ -32,16 +32,17 @@ function ProjectDescription({onClose, show}) {
                 <Image alt="cerrar" className={style.card_description_close} src={close} width={32} height={32}/>
             </a>
             
-            <h2 className={style.card_description_title}> Mobile Finance</h2>
+            <h2 className={style.card_description_title}>  {element.name}</h2>
             <div className={style.card_description_cont} id='description'>
                 <Image alt="project" className={style.card_description_proj} src={project} width={240} height={180}/>
                 <div className={style.card_description_cont_2}>
-                    <p className={style.card_description_descrip}>We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
-                    <ProjectLinks/>
+                    <p className={style.card_description_descrip}>{element.description}</p>
+                    <ProjectLinks element={element}/>
                 </div>
             </div>
            
-            <ProjectTech/>    
+            <ProjectTech element={element}/>    
+            
         </section>
      );
 }

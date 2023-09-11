@@ -13,16 +13,17 @@ import { Inter} from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-function ProjectItem() {
+function ProjectItem({element}) {
     const [modalProject, setModalProject] = useState(false);
+    
     return ( 
         <>
-             <section onClick={()=>setModalProject(true)} className={style.card_container}>
-                <h4>Project 1</h4>
-                <Image alt="proyecto" className={style.card_figure} src={project} width={300} height={200}/>
+             <section id='ProjectItem' onClick={()=>setModalProject(true)} className={style.card_container}>
+                <h4>{element.name}</h4>
+                <Image alt="proyecto" className={style.card_figure} src={element.image} width={300} height={200}/>
             </section>
             {modalProject && createPortal(
-                <ModalDescription onClose={()=>setModalProject(false)} show={modalProject}/>,
+                <ModalDescription element={element} onClose={()=>setModalProject(false)} show={modalProject}/>,
                 document.body
             )}    
         </>
