@@ -14,7 +14,7 @@ const gitL = (gi) => {
        // console.log("GIT")
         return(
             <li>
-                <Link href={gi}>
+                <Link href={gi} target='_blank'>
                     <Image alt="github" src={github} className={style.link_icon_project} width={40} height={40}/> 
                 </Link>
             </li> 
@@ -27,7 +27,7 @@ const pageL = (pg) => {
         console.log("PG")
         return(
             <li>
-                <Link href={pg}>
+                <Link href={pg} target='_blank'>
                     <Image alt="page" src={page} width={47} height={47}/>
                 </Link>
             </li>
@@ -40,7 +40,7 @@ const videoL = (vd) => {
         console.log("VD")
         return(
             <li>
-            <Link href={vd}>
+            <Link href={vd} target='_blank'>
                 <Image alt="video" src={video} width={47} height={47}/>
             </Link>
         </li>

@@ -14,8 +14,8 @@ import { Inter} from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 function ProjectItem({element}) {
+   
     const [modalProject, setModalProject] = useState(false);
-    
     return ( 
         <>
              <section id='ProjectItem' onClick={()=>setModalProject(true)} className={style.card_container}>

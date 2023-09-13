@@ -22,21 +22,28 @@
     align-items: center;
     align-content: center;
     padding: 12px;
-    border: rgb(241, 241, 241) solid 1px;
+    border:#0F044C dashed 1px;
     border-radius: 16px;
     text-decoration: none;
     list-style: none;
 }
 
 .project_list_menu_item{
-    color: black;
+    color: #0F044C;
+    border: none;
+    background-color: white;
+    font-size: 0.9rem;
+    padding: 4px;
+    width:auto;
+   font-weight: bold; 
 }
 
 .project_list_cards_cont{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     justify-content: space-evenly;
-    justify-items: center
+    justify-items: center;
+    padding:16px;
 }
 
 .project_list_card{
@@ -69,7 +76,11 @@
     display:block;
 }
 
-
+@media only screen and (max-width: 690px) {
+    .project_list_cards_cont{
+        grid-template-columns: auto;
+    }  
+}
 
 
 

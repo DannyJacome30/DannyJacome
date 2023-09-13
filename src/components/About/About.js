@@ -11,8 +11,17 @@ function About() {
         <section id='about_me' className={`${inter.className} ${style.about_container}`}>
             <h2 className={style.about_title}>About me</h2>
             <p className={style.about_text}>
-            Lorem ipsum dolor sit amet consectetur. Pellentesque id lobortis mauris porta ac lectus ac id ut. Urna dolor mattis tellus sapien integer sem vulputate ultricies. Nisl adipiscing maecenas tempor nibh et. Eleifend bibendum malesuada non ligula malesuada eu lobortis elit. A velit fermentum ultricies magna quisque nibh urna. Aliquam cursus suspendisse est urna sed ullamcorper. In ac consectetur amet nullam laoreet bibendum. Sagittis auctor dignissim placerat volutpat placerat est mi feugiat. Dolor facilisis cras netus velit vivamus blandit tincidunt. Sit dignissim amet morbi etiam quisque imperdiet fringilla. Lectus sed hendrerit facilisis libero. Arcu ipsum a elementum at. Amet quisque morbi consequat ac non sed.
-Diam quis placerat habitant amet nunc ullamcorper. Sit nulla nibh metus vulputate sit nibh pellentesque.
+            Hello! I'm Daniela Jacome. I'm  an enthusiastic junior developer with a huge passion for the world of technology and programming. Since discovering my passion for computer science, I've been on an exciting journey of learning and constant growth. I'm a computer science engineer graduate from the National Polytechnic School. My educational background has provided me with a strong foundation in computer science, and my diverse experiences have shaped me into a well-rounded and adaptable professional.
+            <br/><br/>
+            As a junior developer what excites me the most is the opportunity to learn and grow every day. I'm always looking for new ways to expand my knowledge and improve my skills, which is why I have obtained some certifications as further education. In additional, I've had the privilege of working independently on projects with small businesses. These experiences have been invaluable in teaching me that there's always more to learn in the ever-evolving field of technology. They've also given me a unique perspective on the importance of effective communication. This has honed my ability to communicate effectively with high-level executives. Selling ideas and solutions to decision-makers requires not only technical expertise but also the ability to translate complex concepts into clear, business-focused language. 
+            <br/><br/>
+            I'm excited about the opportunities that the future holds and eager to be part of innovative teams seeking creative solutions to technological challenges. If you're looking for someone dedicated, motivated, and willing to learn, I'd be delighted to be part of your team!
+
+            Thank you for visiting my portfolio and getting to know a bit more about me. If you'd like to get in touch or discuss collaboration opportunities, please feel free to chat me through my social media profiles.
+            <br/><br/>
+            To learn more about me, my education, experience, additional certifications, projects I have been a part of, and references, you can click the "Download CV" button. It is my resume, a complete document that provides a detailed description
+            <br/><br/>
+            I look forward to the next opportunity to work together and do amazing things!
             </p>
             <button className={style.about_btn}>Download CV</button>
         </section>

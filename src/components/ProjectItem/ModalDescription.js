@@ -34,7 +34,7 @@ function ProjectDescription({element, onClose, show}) {
             
             <h2 className={style.card_description_title}>  {element.name}</h2>
             <div className={style.card_description_cont} id='description'>
-                <Image alt="project" className={style.card_description_proj} src={project} width={240} height={180}/>
+                <Image alt="project" className={style.card_description_proj} src={element.image} width={240} height={180}/>
                 <div className={style.card_description_cont_2}>
                     <p className={style.card_description_descrip}>{element.description}</p>
                     <ProjectLinks element={element}/>
