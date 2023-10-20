@@ -19,8 +19,8 @@ function ProjectItem({element}) {
     return ( 
         <>
              <section id='ProjectItem' onClick={()=>setModalProject(true)} className={style.card_container}>
-                <h4>{element.name}</h4>
-                <Image alt="proyecto" className={style.card_figure} src={element.image} width={300} height={200}/>
+                <h3>{element.name}</h3>
+                <Image alt="proyecto" className={style.card_figure} src={element.image} width={300} height={160}/>
             </section>
             {modalProject && createPortal(
                 <ModalDescription element={element} onClose={()=>setModalProject(false)} show={modalProject}/>,

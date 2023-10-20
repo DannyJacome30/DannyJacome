@@ -1,0 +1,34 @@
+.certifications_cont{
+    background-color: white;
+    color: #141E61;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 140px 0px;
+}
+
+.certfications_list{
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.certfications_list th {
+    background-color: #141E61;
+    color: #ffffff;
+    padding: 0.3rem 0rem;
+}
+
+.certfications_list td {
+    color: black;
+    padding: 4px 0px;
+    text-align: left;
+    padding: 0.2rem 0.5rem;
+}
+
+.certfications_list td a{
+   
+    text-decoration: underline;
+    
+}
+
+.certfications_list tr:hover {background-color: #f0f0f0;}

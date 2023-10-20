@@ -31,9 +31,9 @@ function ProjectTable({projectList}) {
     
     return ( 
         <section id='projects' className={`${style.project_list_container} ${inter.className}`}>
-            <h2 className={style.project_list_title}>
+            <h1>
                 Projects
-            </h2>
+            </h1>
             <div className={style.project_list_menu_cont}>
                 <div className={style.project_list_menu}>
                     <button id='all' className={style.project_list_menu_item} onClick={() => handleMouseClick('All')} >

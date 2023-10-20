@@ -15,7 +15,9 @@ function Navbar() {
                     
                 <a className={style.navbar_item} href="#about_me">About me</a> 
                 <a className={style.navbar_item} href="#projects">Projects</a>
+                <a className={style.navbar_item} href="#certifications">Certifications</a>
                 <a className={style.navbar_item} href="#contact_me">Contact me</a>
+                
             </nav>
         </header>
      );

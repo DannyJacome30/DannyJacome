@@ -3,13 +3,6 @@
     padding: 32px;
 }
 
-.project_list_title{
-    color: #0F044C;
-    text-align: center;
-    padding-bottom: 32px;
-    font-weight: bold;
-}
-
 .project_list_menu_cont{
     margin: 0px 64px;
 }
@@ -21,26 +14,29 @@
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
-    padding: 12px;
-    border:#0F044C dashed 1px;
-    border-radius: 16px;
+    margin: 12px;
+    /*border:#0F044C dashed 1px;
+    border-radius: 16px;*/
     text-decoration: none;
     list-style: none;
+    height:2.5rem;
 }
 
 .project_list_menu_item{
     color: #0F044C;
     border: none;
-    background-color: white;
+    background-color: #eee;
     font-size: 0.9rem;
     padding: 4px;
-    width:auto;
+    width:12%;
    font-weight: bold; 
+    border-radius: 8px;
+    height: 100%;
 }
 
 .project_list_cards_cont{
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-evenly;
     justify-items: center;
     padding:16px;
@@ -64,11 +60,13 @@
 }
 
 .project_list_menu_item:active{
-    color: blue;
+    color: #0F044C;
+    background-color: #ffffff;
 }
 
 .project_list_menu_item:hover{
-    color: rgb(47, 47, 165);
+    color: #ffffff;
+    background-color: #0F044C;
 }
 
 .project_list_card:hover .card_description{

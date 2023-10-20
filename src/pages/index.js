@@ -7,11 +7,12 @@ import Presentation from '@/components/Presentation/Presentation'
 import Contact from '@/components/Contact/Contact'
 import ProjectTable from '@/components/ProjectTable/ProjectTable'
 import About from '@/components/About/About'
+import Certifications from '@/components/Certifications/Certifications'
 import Layout from '@/components/Layout/Layout '
 
 const inter = Inter({ subsets: ['latin'] })
 const bd2 = new db();
-const projectList = bd2.getAll();
+const data = bd2.getAll();
 export default function Home() {
   
   return (
@@ -19,7 +20,8 @@ export default function Home() {
     <Layout>
         <Presentation/>
         <About/>
-        <ProjectTable projectList={projectList[0]}/>
+        <ProjectTable projectList={data[0][0]}/>
+        <Certifications projectList={data[0][1]}/>
         <Contact/>
     </Layout>
       

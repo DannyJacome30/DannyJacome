@@ -1,15 +1,20 @@
 .card_container{
     cursor: pointer;
-    padding:16px;
-    margin: 8px; 
+    padding:20px;
+    margin: 8px 0px;
     border: 1px solid rgb(241, 241, 241);
     border-radius:8px;
     width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 
 .card_figure{
     width: 100%;
     transition: all .3s ease;
+    margin: 12px 0px 0px 0px;
 }
 
 /*Project Description*/
@@ -28,7 +33,7 @@
     transition: all .3s ease;
     z-index: 2;
     overflow: hidden;
-    box-shadow: 0px 0px 480px 200px #080229
+    box-shadow: 0px 0px 480px 400px #00000027
 } 
 
 .card_description_close{
@@ -38,10 +43,19 @@
     
 }
 
+.card_description_title{
+    color: #0F044C;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
 .card_description_cont{
     display: flex;
     flex-direction: row;
-    margin: 24px 20px;
+    margin: 24px 18px 12px 18px;
     justify-content:center;
     width:100%;
 }
@@ -50,10 +64,23 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 0rem 3rem;
+}
+
+.card_description_cont_2_text{
+    white-space: pre-line;
+    text-align: justify;
 }
 
 .card_description_descrip{
-    padding: 0px 64px
+    padding: 0px 64px;
+    text-align:justify;
+}
+
+.card_description_proj{
+    
+    box-shadow: 10px 0px 20px 4px #0000002a;   
+    border-radius: 8px;
 }
 
 /*Links list*/
@@ -64,8 +91,13 @@
     align-items: center;
     text-decoration: none;
     list-style: none;
+    margin: 16px 0px;
 }
 
+.link_icon_project{
+    /*background-color: #0F044C;*/
+    border-radius: 50%;
+}
 
 /*Table tech*/
 .tech_list{
@@ -78,19 +110,20 @@
 }
 
 .tech_list_btn{
-    background-color: #707070;
     color: #ffffff;
-    border-radius: 8px;
+    border: 1px solid #787A91;
+    background: #787A91;
     height: 32px;
     width: 120px;
     margin: 8px;
     border: none;
     cursor: pointer;
+    
 }
 
 .tech_container{
     position:fixed ;
-    inset: 60% 20% 15% 20%;
+    inset: 70% 20% 20% 20%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -101,7 +134,3 @@
     background-color: #0F044C;
 }
 
-.link_icon_project{
-    background-color: #0F044C;
-    border-radius: 50%;
-}

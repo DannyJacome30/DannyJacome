@@ -22,7 +22,7 @@ function Presentation(){
             <div className={style.home_container} >
                 <div className={style.home_description}>
                     <p className={style.home_text_welcome}>Welcome to my portfolio</p>
-                    <p className={style.home_text_pres}>Hi, I’m Daniela Jácome <br/> Front-end developer</p>
+                    <p className={style.home_text_pres}>Hi, I’m Daniela Jácome <br/> Jr. developer</p>
                 </div>
                 <Image className={style.home_img_logo} alt="logo" src={logo} width={450}
                         height={650}/>

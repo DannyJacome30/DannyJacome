@@ -2,9 +2,11 @@ import React from 'react';
 
 import style from '@/styles/ProjectItem.module.css'
 
-import github from '../../../public/Github.svg';
-import video from '../../../public/video.svg';
-import page from '../../../public/page.svg';
+import github from '../../../public/links/githubD.svg';
+import video from '../../../public/links/videoD.svg';
+import page from '../../../public/links/arrowD.svg';
+import figma from '../../../public/links/figmaD.svg';
+import api from '../../../public/links/apiD.svg';
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -16,6 +18,32 @@ const gitL = (gi) => {
             <li>
                 <Link href={gi} target='_blank'>
                     <Image alt="github" src={github} className={style.link_icon_project} width={40} height={40}/> 
+                </Link>
+            </li> 
+        );
+    }
+}
+
+const figmaL = (fig) => {
+    if(fig!=""){
+       // console.log("GIT")
+        return(
+            <li>
+                <Link href={fig} target='_blank'>
+                    <Image alt="figma" src={figma} className={style.link_icon_project} width={40} height={40}/> 
+                </Link>
+            </li> 
+        );
+    }
+}
+
+const apiL = (ap) => {
+    if(ap!=""){
+       // console.log("GIT")
+        return(
+            <li>
+                <Link href={ap} target='_blank'>
+                    <Image alt="figma" src={api} className={style.link_icon_project} width={40} height={40}/> 
                 </Link>
             </li> 
         );
@@ -57,7 +85,8 @@ function ProjectLinks({element}) {
                 {gitL(element.github)}
                 {pageL(element.page)}
                 {videoL(element.video)}
-               
+                {figmaL(element.figma)}
+                {apiL(element.api_use)}
                                    
             </ul>
         </div>
